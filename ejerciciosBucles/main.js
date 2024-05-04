@@ -14,7 +14,6 @@ for (let i = 1; i <= 10; i++) {
 
 }
 
-
 // 2. Realizar un programa que permita el ingreso de numeros los cuales se tienen que ir
 // acumulando. El ingreso de datos terminara cuando el usuario ingrese un valor 0.
 
@@ -43,7 +42,7 @@ alert("La suma total es: " + suma)
 
 let numeroSecreto = 40
 let numeroIngresado = 0
-let intentos = 0
+let intentos = 1
 
 do {
     numeroIngresado = parseInt(prompt("Ingrese un número del 1-100: "))
@@ -272,6 +271,7 @@ while (true) {
 
 
 // 14. Realizar un programa que imprima por consola un triangulo de 5 asteriscos de lado.
+
 
 let asteriscos = " "
 
