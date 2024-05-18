@@ -3,7 +3,8 @@
     padding-right: 5px;
 }
 .mb-3{
-    width: 70vw;
+    width: 69.5vw;
+    
 }
 .container-fluid{
     height: 100vh;
@@ -12,11 +13,11 @@
     width: 30vh;
 }
 body {
-    background: linear-gradient(to right,#ff6666, #ffcccc);
+    background: linear-gradient(to right, #0F293C, #39BBDE); 
     color: white;
-}
+  }
 ::placeholder {
-    font-size: 10px;
+    font-size: 14px;
 }
 
 #inputTitulo{
@@ -27,3 +28,21 @@ body {
     min-height: 10vh;
 }
 
+.custom-button{
+    color: black;
+    border-color: black;
+}
+
+.card {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+.card:hover {
+    transform: scale(1.05);
+    background-color: rgb(39, 126, 149);
+    color: white;
+  }
+
+.custom-shadow{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); 
+}

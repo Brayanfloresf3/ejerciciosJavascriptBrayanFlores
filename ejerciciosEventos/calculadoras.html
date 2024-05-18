@@ -13,7 +13,7 @@
 <body>
     <div class="container-fluid d-flex flex-column justify-content-around align-items-center">
 
-<!-- Calcular IMC -->
+        <!-- Calcular IMC -->
         <div class="d-flex align-items-center">
             <div>
                 <h2>Calcular Índice de Masa Corporal (IMC)</h2>
@@ -24,38 +24,40 @@
                 <div class="mb-3">
                     <label for="peso" class="form-label">Peso (kg)</label>
                     <input type="number" class="form-control" id="peso" placeholder="62">
-                    
+
                 </div>
                 <div class="d-flex justify-content-between">
-                <input class="form-control " type="number" id="resultado" placeholder="Resultado" readonly>
-                
-                <button type="button" class="btn btn-primary" id="calcular" >Calcular</button>
+                    <input class="form-control" type="number" id="resultado" placeholder="Resultado" disabled>
+
+                    <button type="button" class="btn btn-primary" id="calcular">Calcular</button>
+                </div>
             </div>
-            </div> 
-              
+
         </div>
-        
-<!-- Conversor de moneda -->
+
+        <!-- Conversor de moneda -->
         <div class="d-flex align-items-center">
             <div>
                 <h2>Conversor de Moneda</h2>
                 <div class="mb-3">
                     <label for="pesos" class="form-label">Pesos Colombianos</label>
                     <div class="input-group mb-3">
-                        <span class="input-group-text">$</span>
-                        <input type="number" class="form-control" id="pesos" >
+                        <span class="input-group-text">COP$</span>
+                        <input type="number" class="form-control" id="pesos">
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="dolar" class="form-label">Dolar Estadounidense</label>
                     <div class="input-group mb-3">
-                        <span class="input-group-text">$</span>
+                        <span class="input-group-text">USD$</span>
                         <input type="number" class="form-control" id="dolar">
                     </div>
                 </div>
             </div>
-        </div>  
-        <script src="/calculadoras.js"></script>
+        </div>
+    </div>
+
+    <script src="/calculadoras.js"></script>
 </body>
 
 </html>

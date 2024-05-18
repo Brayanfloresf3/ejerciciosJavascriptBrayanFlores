@@ -64,7 +64,7 @@ function pintarNotas() {
     for (let i = 0; i < notas.length; i++) {
       let nota = notas[i]
       let tarjetaNota = document.createElement("div")
-      tarjetaNota.classList.add("card", "border-dark", "mb-3")
+      tarjetaNota.classList.add("card", "border-dark", "mb-3", "custom-shadow")
       tarjetaNota.style.maxWidth = "18rem"
       tarjetaNota.innerHTML = `
       <div class="card-header">
@@ -93,10 +93,10 @@ function borrarNota(idNota) {
 ////////////////////////////////////////////
 
 function marcarRealizada(idNota) {
- 
+
   let nota = notas.find(nota => nota.id === idNota)
   if (nota) {
-    nota.realizada = !nota.realizada 
+    nota.realizada = !nota.realizada
   }
 
   pintarNotas()
@@ -112,13 +112,13 @@ function filtrarNotas() {
   let soloTareasRealizadas = document.getElementById("flexSwitchCheckDefault").checked
   let tarjetas = document.querySelectorAll(".card")
 
-   // aca revisamos que el texto buscado este en la tarjeta: titulo, contenido o realizada
+  // aca revisamos que el texto buscado este en la tarjeta: titulo, contenido o realizada
   tarjetas.forEach(function (tarjeta) {
     let titulo = tarjeta.querySelector(".card-header").textContent.toLowerCase()
     let contenido = tarjeta.querySelector(".card-text").textContent.toLowerCase()
     let realizada = tarjeta.querySelector("input[type=\"checkbox\"]").checked;
 
-     //con condicionales, se muestran las que tengan el texto buscado y las que no se ocultan
+    //con condicionales, se muestran las que tengan el texto buscado y las que no se ocultan
     if (
       (titulo.includes(textoBusqueda) || contenido.includes(textoBusqueda)) &&
       (!soloTareasRealizadas || realizada)
