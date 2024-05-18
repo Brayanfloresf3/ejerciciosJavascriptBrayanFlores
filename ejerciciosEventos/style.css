@@ -1,0 +1,29 @@
+*{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.mb-3{
+    width: 70vw;
+}
+.container-fluid{
+    height: 100vh;
+}
+#resultado{
+    width: 30vh;
+}
+body {
+    background: linear-gradient(to right,#ff6666, #ffcccc);
+    color: white;
+}
+::placeholder {
+    font-size: 10px;
+}
+
+#inputTitulo{
+    width: 69vw;
+}
+
+.card-text{
+    min-height: 10vh;
+}
+
