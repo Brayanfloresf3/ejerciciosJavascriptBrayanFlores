@@ -6,6 +6,8 @@ let miNombre = "Brayan"
 
 let miApellido = "Flores"
 
+console.log(miNombre)
+console.log(miApellido);
 //Exercies: 3
 
 let miEdad = 28
